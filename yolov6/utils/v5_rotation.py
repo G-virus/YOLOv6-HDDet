@@ -328,7 +328,7 @@ def angle_decode(angle_fitting_methods, angle_l, labels, status):
                 deg = 360./pow(num_division, i+1)
                 i_labels = labels[:, i*num_division:(i+1)*num_division, :, :]
                 i_labels = torch.sigmoid(i_labels)
-                angle_output += torch.argmax(i_labels, dim=1, keepdim=True) * dceg
+                angle_output += torch.argmax(i_labels, dim=1, keepdim=True) * deg
         if status == 'loss_decode':
             # [b, 13125, ang]
             num_division = angle_l[0]
