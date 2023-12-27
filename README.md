@@ -58,3 +58,7 @@ python tools/infer_R.py --weights weights/CAR/best_ckpt.pt --save-dir runs/infer
 ```
 python tools/train_R.py --write_trainbatch_tb --data-path "./data/sjtu.yaml" --conf-file "./configs/ohd/yolov6n_finetune-ohd.py" --batch-size 12 --workers 4 --epochs 300
 ```
+## Credits
+This project uses code from the following projects:
+- [YOLOv6-R](https://github.com/haohaolalahao/YOLOv6-R) by [haohaolalahao](https://github.com/haohaolalahao)
+- [YOLOv6](https://github.com/meituan/YOLOv6) by [meituan](https://github.com/meituan)
