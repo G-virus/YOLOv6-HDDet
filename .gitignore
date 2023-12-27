@@ -12,7 +12,6 @@ __pycache__/
 videos/
 build/
 runs/
-weights/
 develop-eggs/
 dist/
 downloads/
@@ -117,7 +116,4 @@ venv.bak/
 *.engine
 *.so
 
-# picture
-*.jpg
-*.png
 
