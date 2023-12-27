@@ -1,0 +1,12 @@
+# CAR
+train: /home/qd1205/PycharmProjects/learn_torch/yolo/datasets/OHD-SJTU/OHD-SJTU-L/v6/images/train
+val: /home/qd1205/PycharmProjects/learn_torch/yolo/datasets/OHD-SJTU/OHD-SJTU-L/v6/images/test
+test: /home/qd1205/PycharmProjects/learn_torch/yolo/datasets/OHD-SJTU/OHD-SJTU-L/v6/images/test
+
+# number of classes
+nc: 6
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+
+# class names
+names: ['harbor', 'helicopter', 'large-vehicle', 'plane', 'ship', 'small-vehicle']

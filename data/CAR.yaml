@@ -1,0 +1,12 @@
+# CAR
+train: /home/qd1205/PycharmProjects/learn_torch/yolo/datasets/car/images/train
+val: /home/qd1205/PycharmProjects/learn_torch/yolo/datasets/car/images/val
+test: /home/qd1205/PycharmProjects/learn_torch/yolo/datasets/car/images/val
+
+# number of classes
+nc: 3
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+
+# class names
+names: ["dumper", "bulldozer", "navvy"]
