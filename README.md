@@ -1,6 +1,8 @@
 
 ## YOLOv6-HDDet
 
+![SJTU-L example](sjtu-l.png)
+
 ### Unimplemented Features
 - Distillation
 - `fuse_ab`
