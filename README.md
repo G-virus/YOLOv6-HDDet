@@ -1,5 +1,5 @@
 
-## YOLOv6-HDDet
+## YOLOv6-HDDet(for OHD)
 
 ![SJTU-L example](sjtu-l.png)
 
