@@ -1,5 +1,5 @@
 
-## YOLOv6-HDDet(for OHD)
+## YOLOv6-HDDet(for Object Heading Detection)
 
 ![SJTU-L example](sjtu-l.png)
 
