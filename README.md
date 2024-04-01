@@ -39,9 +39,25 @@ dataset/
 ### Optional Configuration Files
 - `./configs/ohd/yolov6n_finetune-ohd.py`
 - `./configs/ohd/yolov6l_finetune-ohd.py`
+- For more diverse and complex datasets (like DOTA or SJTU). It is recommended to use yolov6l and set flip, degree, translate and scale in data augmentation.
+- For simple datasets (like HRSC2016 or my CAR dataset), yolov6n is recommended, and the recommended settings are translate, scale and shear.
 
 ### Trained Weights Download (CAR and SJTU-L)
 - [Download Link(Google drive)](https://drive.google.com/drive/folders/1_iakNJbe37s-Z-vBHexrQ24DI19U415i?usp=sharing)
+
+### Trained results.
+| OHD-CAR     | mAP50 | Head_acc | Head_loss |
+|-------------|-------|---------|-----------|
+| v6n_HDDet   | 88.32 | 99.15   | 38.2      |
+| v6n_FULLCSL | 76.94 | 99.81   | 11.88     |
+
+| SJTU-L      | mAP50 | Head_acc | Head_loss |
+|-------------|-------|----------|-----------|
+| v6L_HDDet   | 66.81 | 66.75    | 38.62     |
+| v6L_FULLCSL | 70.58 | 92.16    | 29.58     |
+
+- HDDet is more suitable for lightweight models and small epochs training.FULLCSL on the other hand is suitable for complex datasets. And head_loss to be very low with HDDet. 
+
 
 ### Test Examples
 ```

@@ -37,35 +37,35 @@ model = dict(
         # angle_fitting_methods='regression',
         # angle_max=1,
         # NOTE for angle csl
-        angle_fitting_methods="csl",
-        angle_max=360,
+        # angle_fitting_methods="csl",
+        # angle_max=360,
         # NOTE for angle dfl
         # angle_fitting_methods='dfl',
         # angle_max=180,
         # NOTE for angle MGAR
         # angle_fitting_methods='MGAR',
         # angle_max=10,
-        # NOTE for angle MDD
-        # angle_fitting_methods='MDD',
+        # NOTE for angle HDDet
+        angle_fitting_methods='MDD',
         # angle_fitting_methods='MDD+reg',
-        # angle_max=(6,6),
+        angle_max=(6,5),
     ),
 )
 
 loss = dict(
-    loss_mode="hbb+angle",
-    # loss_mode="hbb+cosiou+angle",
+    # loss_mode="hbb+angle",
+    loss_mode="hbb+cosiou+angle",
     # loss_mode="ohd,
     # NOTE for angle regression
     # loss_weight={"class": 1.0, "iou": 2.0, "dfl": 0.5, "angle": 0.05},
     # NOTE for angle csl
-    loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.05, 'cwd': 0.2},
+    # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.05, 'cwd': 0.2},
     # NOTE for angle dfl
     # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.25, 'cwd': 10},
     # NOTE for angle MGAR
     # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.05, "MGAR_cls": 0.05, "MGAR_reg": 0.05, 'cwd': 0.2, },
-    # NOTE for angle MDD
-    # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.08, 'cwd': 0.2},
+    # NOTE for angle HDDet
+    loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.08, 'cwd': 0.2},
 )
 
 solver = dict(
@@ -97,11 +97,11 @@ data_aug = dict(
     # NOTE mosaic 数值需要确定一下
     mosaic=0.0,
     mixup_mosaic=0.0,
-    mixup=0.1,
+    mixup=0.0,
 
     degrees=360,
-    translate=0.0,
-    scale=0.0,
+    translate=0.1,
+    scale=0.3,
     shear=0.0,
     perspective=0.000
 )

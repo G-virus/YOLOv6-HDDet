@@ -62,13 +62,13 @@ loss = dict(
     # NOTE for angle regression
     # loss_weight={"class": 1.0, "iou": 2.0, "dfl": 0.5, "angle": 0.05},
     # NOTE for angle fullcsl
-    loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.5, 'cwd': 0.2},
+    loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.05, 'cwd': 0.2},
     # NOTE for angle dfl
     # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.25, 'cwd': 10},
     # NOTE for angle MGAR
     # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.08, "MGAR_cls": 0.05, "MGAR_reg": 0.05, 'cwd': 0.2, },
-    # NOTE for angle MDD
-    # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.09, 'cwd': 0.2},
+    # NOTE for angle HDDet
+    # loss_weight={"class": 1.0, "iou": 2.5, "dfl": 0.5, "angle": 0.05, 'cwd': 0.2},
 )
 
 
@@ -93,20 +93,20 @@ data_aug = dict(
     hsv_h=0.0138,
     hsv_s=0.664,
     hsv_v=0.464,
-    flipud=0.5,
-    fliplr=0.5,
+    flipud=0.0,
+    fliplr=0.0,
     # rotate=0.0,
     # rect_classes=[9, 11],
     rect_classes=None,
     # NOTE mosaic 数值需要确定一下
     mosaic=0.0,
     mixup_mosaic=0.0,
-    mixup=0.3,
+    mixup=0.0,
 
-    degrees=360.,
-    translate=0.0,
-    scale=0.0,
-    shear=0.0,
+    degrees=0.,
+    translate=0.1,
+    scale=0.5,
+    shear=10.,
     perspective=0.000
 )
 
