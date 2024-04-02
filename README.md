@@ -76,6 +76,23 @@ python tools/infer_R.py --weights weights/CAR/best_ckpt.pt --save-dir runs/infer
 ```
 python tools/train_R.py --write_trainbatch_tb --data-path "./data/sjtu.yaml" --conf-file "./configs/ohd/yolov6n_finetune-ohd.py" --batch-size 12 --workers 4 --epochs 300
 ```
+
+### Citation
+If this project is helpful for your research, please cite the following article:
+
+```
+@ARTICLE{10473123,
+  author={Ding, Siran and Liu, Jingxian and Yang, Fan and Xu, Mai},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={HDDet: A More Common Heading Direction Detector for Remote Sensing and Arbitrary Viewing Angle Images}, 
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-14},
+  keywords={Detectors;Image edge detection;Training;Annotations;Remote sensing;Object recognition;Couplings;Data augmentation;deep learning;intersection over union (IoU) loss;object heading detection (OHD);remote sensing},
+  doi={10.1109/TGRS.2024.3377643}}
+```
+
 ## Credits
 This project uses code from the following projects:
 - [YOLOv6-R](https://github.com/haohaolalahao/YOLOv6-R) by [haohaolalahao](https://github.com/haohaolalahao)
