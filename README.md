@@ -18,10 +18,15 @@
 class_num x y w h theta (0-360, clockwise rotation from true north)
 0 0.08984375 0.486328125 0.19140625 0.1796875 270.0
 ```
+<img src="angle.png" alt="angle" width="50%">
 
 ### Box Conversion Functions Available
-- For HBB, OBB, OHD:
+- For normal HBB, OBB, OHD:
   - `yolov6/utils/v5_rotation.py`
+- In the more common case(DOTA and SJTU), 8 vertices are converted to (x, y, w, h, $\theta$):
+  - `yolov6/utils/8corners2yolo.py`
+
+
 
 ### Dataset Directory Structure
 ```
